@@ -29,6 +29,9 @@ public class CarController : MonoBehaviour
     }
     private void Turn()
     {
-
+        TurnInputValue = Input.GetAxis("Horizontal");
+        float turn = TurnInputValue * turnSpeed * Time.deltaTime;
+        Quaternion turnRotation=Quaternion.Euler(0,turn,0);
+        rb.MoveRotation(rb.rotation * turnRotation); 
     }
 }
