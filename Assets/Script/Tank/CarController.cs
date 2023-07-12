@@ -25,7 +25,7 @@ public class CarController : MonoBehaviour
     {
         MoveInputValue = Input.GetAxis("Vertical");
         Vector3 move = transform.forward * MoveInputValue * moveSpeed * Time.deltaTime;
-        rb.MovePosition(rb.position + move);
+        rb.MovePosition(rb.position + move);//èuä‘à⁄ìÆ
     }
     private void Turn()
     {
