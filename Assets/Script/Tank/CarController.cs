@@ -9,6 +9,8 @@ public class CarController : MonoBehaviour
     float TurnInputValue;
     public float moveSpeed;
     public float turnSpeed;
+    public float jumpSpeed;
+    private bool isJUmp=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,12 @@ public class CarController : MonoBehaviour
     {
         Move();
         Turn();
+        //jump
+        if (Input.GetKeyDown(KeyCode.J)&&isJUmp==false)
+        {
+            rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
+            isJUmp = true;
+        }
     }
     private void Move()
     {
@@ -33,5 +41,9 @@ public class CarController : MonoBehaviour
         float turn = TurnInputValue * turnSpeed * Time.deltaTime;
         Quaternion turnRotation=Quaternion.Euler(0,turn,0);
         rb.MoveRotation(rb.rotation * turnRotation); 
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        isJUmp = false;
     }
 }

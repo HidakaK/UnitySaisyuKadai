@@ -17,9 +17,9 @@ public class CoinController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Coin")
+        if (other.gameObject.tag == "Player")
         {
-            Destroy(other.gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
