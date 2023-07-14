@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class DestroyObject : MonoBehaviour
 {
+    public GameObject effectPrefab;
+    public GameObject effectPrefab2;
+    public int objectHP;
+    public AudioClip shotSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +23,22 @@ public class DestroyObject : MonoBehaviour
     {
         if (other.gameObject.tag == "Shell")//íeÇ™ìñÇΩÇ¡ÇΩéû
         {
-            Destroy(this.gameObject);//ìñÇΩÇ¡ÇΩÇ‡ÇÃÇè¡Ç∑
-            Destroy(other.gameObject);//ãÖÇè¡Ç∑
+            objectHP -= 1;
+            if (objectHP > 0)
+            {
+                Destroy(other.gameObject);//ãÖÇè¡Ç∑
+                GameObject effect = Instantiate(effectPrefab, transform.position, Quaternion.identity);
+                AudioSource.PlayClipAtPoint(shotSound, transform.position);
+            }
+            else
+            {
+                Destroy(this.gameObject);//ìñÇΩÇ¡ÇΩÇ‡ÇÃÇè¡Ç∑
+                GameObject effect = Instantiate(effectPrefab2, transform.position, Quaternion.identity);
+                Destroy(effect, 2.0f);
+                Destroy(this.gameObject);
+            }
+            
+            
         }
     }
 }

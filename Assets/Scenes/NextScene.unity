@@ -1656,6 +1656,7 @@ MonoBehaviour:
   shellPrefab: {fileID: 918631440310689126, guid: a9f58e2c02dfa52448e1026c7aee62ee, type: 3}
   shotSpeed: 500
   shotSound: {fileID: 8300000, guid: c415cc25d03f0cf47aacfc785077f61d, type: 3}
+  shotCount: 0
 --- !u!1 &1871953623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,6 +1703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 30
   turnSpeed: 100
+  jumpSpeed: 0
 --- !u!54 &1871953626
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1949,7 +1951,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 17804b3cb09fcd14f833f991a0f990bf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1988,7 +1990,7 @@ Transform:
   m_GameObject: {fileID: 2007657042}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
