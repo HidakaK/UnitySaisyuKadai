@@ -22,6 +22,10 @@ public class ShotShell : MonoBehaviour
         timer += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Space)&&timer>timeBetweenShot)
         {
+            if (shotCount < 1)//‹Ê‚ÌãŒÀ
+            {
+                return;
+            }
             timer = 0f;
             GameObject shell = Instantiate(shellPrefab, transform.position, Quaternion.identity) as GameObject;
             Rigidbody shellRb = shell.GetComponent<Rigidbody>();

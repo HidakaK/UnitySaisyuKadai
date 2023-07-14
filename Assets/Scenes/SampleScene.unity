@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -181,7 +181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83816656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -495.3, y: 5, z: -500}
+  m_LocalPosition: {x: -495.3, y: -22.6, z: -459.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1318,7 +1318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.14815149, y: -0, z: -0, w: 0.9889647}
-  m_LocalPosition: {x: 0.43, y: 2.62, z: -5.19}
+  m_LocalPosition: {x: -500.4, y: -12.47, z: -473.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2456,7 +2456,7 @@ MonoBehaviour:
   shellPrefab: {fileID: 918631440310689126, guid: a9f58e2c02dfa52448e1026c7aee62ee, type: 3}
   shotSpeed: 500
   shotSound: {fileID: 8300000, guid: c415cc25d03f0cf47aacfc785077f61d, type: 3}
-  shotCount: 0
+  shotCount: 15
 --- !u!4 &1733655569
 Transform:
   m_ObjectHideFlags: 0
