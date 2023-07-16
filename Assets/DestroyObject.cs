@@ -33,13 +33,15 @@ public class DestroyObject : MonoBehaviour
             }
             else
             {
+                ScoreSumController.scorenum += enemyscore;
                 Destroy(this.gameObject);//ìñÇΩÇ¡ÇΩÇ‡ÇÃÇè¡Ç∑
                 GameObject effect = Instantiate(effectPrefab2, transform.position, Quaternion.identity);
                 Destroy(effect, 2.0f);
-                Destroy(this.gameObject);
+                
                 CountEnemy.suvenemysum --;
-                ScoreSumController.scorenum += enemyscore;
+                
             }
+
             
             
         }

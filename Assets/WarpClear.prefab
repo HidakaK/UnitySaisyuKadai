@@ -107,10 +107,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7196417994441226078}
-  - component: {fileID: 4790601624293466584}
-  - component: {fileID: 8665415211182639885}
   m_Layer: 0
-  m_Name: WarpLast
+  m_Name: WarpClear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,31 +132,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4790601624293466584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788809586108187335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09bd6085a9b20de44a2e93c18fb7a2ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &8665415211182639885
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788809586108187335}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.5, y: 7.9, z: 3.15}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2644086515310103558
 GameObject:
   m_ObjectHideFlags: 0

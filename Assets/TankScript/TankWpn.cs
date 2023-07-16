@@ -22,7 +22,7 @@ public class TankWpn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        tankHPLabel.text = "Žc‚è‘Ì—Í" + tankHP;
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -47,6 +47,7 @@ public class TankWpn : MonoBehaviour
         }
         if (other.gameObject.tag == "Bom")
         {
+            
             tankHP -= 5;
             Destroy(other.gameObject);
             if (tankHP > 0)
