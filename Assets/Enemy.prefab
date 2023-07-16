@@ -308,7 +308,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 100000, guid: 8e02e06584f51ab42986fd44c73d976e, type: 3}
   effectPrefab2: {fileID: 100000, guid: 2d036894dd2a9024a978924c521444bf, type: 3}
-  objectHP: 5
+  objectHP: 3
+  shotSound: {fileID: 0}
+  enemyscore: 50
 --- !u!65 &1658065021
 BoxCollider:
   m_ObjectHideFlags: 0

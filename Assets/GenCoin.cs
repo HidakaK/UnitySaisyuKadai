@@ -22,12 +22,7 @@ public class GenCoin : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
 
-            for (double i = 0; i < gen; i++) { }
-
-            float x = Random.Range(-400f, -420f);
-            float z = Random.Range(-384f, -400f);
-            Vector3 pos = new Vector3(x, 2f, z);
-            Instantiate(coinPrefab, pos, Quaternion.identity);
+            ScoreSumController.scorenum += 1000;
         }
             Destroy(this.gameObject);
 

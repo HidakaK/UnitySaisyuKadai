@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e378bd2bada698344bbdec367ffeeeab, type: 2}
+  - {fileID: 2100000, guid: 34c237d6b8237634189527dbff07a050, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,3 +113,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 100000, guid: 13266a9cf8da28e41bfa61b378dfabc5, type: 3}
   getSound: {fileID: 8300000, guid: 208408e4140ee2d458d0769684cfa506, type: 3}
+  reward: 5

@@ -8,6 +8,7 @@ public class DestroyObject : MonoBehaviour
     public GameObject effectPrefab2;
     public int objectHP;
     public AudioClip shotSound;
+    public int enemyscore;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,8 @@ public class DestroyObject : MonoBehaviour
                 GameObject effect = Instantiate(effectPrefab2, transform.position, Quaternion.identity);
                 Destroy(effect, 2.0f);
                 Destroy(this.gameObject);
+                CountEnemy.suvenemysum --;
+                ScoreSumController.scorenum += enemyscore;
             }
             
             
