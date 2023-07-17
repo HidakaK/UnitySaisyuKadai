@@ -5340,6 +5340,10 @@ PrefabInstance:
       propertyPath: tankHPLabel
       value: 
       objectReference: {fileID: 122948604}
+    - target: {fileID: 4220325756705762259, guid: 15fd6ab17ecee8d4e96413405c840680, type: 3}
+      propertyPath: JumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 22be9e6af5e11f042965ed670ea67552, type: 3}
     - target: {fileID: 4220325756705762260, guid: 15fd6ab17ecee8d4e96413405c840680, type: 3}
       propertyPath: scoreLabel
       value: 

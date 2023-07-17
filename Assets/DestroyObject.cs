@@ -33,6 +33,7 @@ public class DestroyObject : MonoBehaviour
             }
             else
             {
+                AudioSource.PlayClipAtPoint(shotSound, transform.position);
                 ScoreSumController.scorenum += enemyscore;
                 Destroy(this.gameObject);//ìñÇΩÇ¡ÇΩÇ‡ÇÃÇè¡Ç∑
                 GameObject effect = Instantiate(effectPrefab2, transform.position, Quaternion.identity);

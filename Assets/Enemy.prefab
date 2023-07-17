@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyShellPrefab: {fileID: 5116542054935992836, guid: eb9bfcfa6045ef546977ce75675043fa, type: 3}
   shotSpeed: 700
-  shotSound: {fileID: 8300000, guid: 208408e4140ee2d458d0769684cfa506, type: 3}
+  shotSound: {fileID: 8300000, guid: c7f9f1859748afa4a8a10906408d3e79, type: 3}
 --- !u!1 &1592587010509567981
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +309,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 100000, guid: 8e02e06584f51ab42986fd44c73d976e, type: 3}
   effectPrefab2: {fileID: 100000, guid: 2d036894dd2a9024a978924c521444bf, type: 3}
   objectHP: 3
-  shotSound: {fileID: 0}
+  shotSound: {fileID: 8300000, guid: d46b0f34841eac8429a7929135882dbb, type: 3}
   enemyscore: 50
 --- !u!65 &1658065021
 BoxCollider:

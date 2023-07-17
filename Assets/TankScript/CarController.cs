@@ -11,6 +11,7 @@ public class CarController : MonoBehaviour
     public float turnSpeed;
     public float jumpSpeed;
     private bool isJUmp=false;
+    public AudioClip JumpSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class CarController : MonoBehaviour
         //jump
         if (Input.GetKeyDown(KeyCode.J)&&isJUmp==false)
         {
+            AudioSource.PlayClipAtPoint(JumpSound, transform.position);
             rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
             isJUmp = true;
         }

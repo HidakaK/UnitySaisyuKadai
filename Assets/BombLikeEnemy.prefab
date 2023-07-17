@@ -99,10 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ca4d834ba7f264eb5ca2e77bc85a9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 0}
-  effectPrefab2: {fileID: 0}
+  effectPrefab: {fileID: 100000, guid: dc533b4ca16d3cd4d94b4d9e8b3376f0, type: 3}
+  effectPrefab2: {fileID: 100000, guid: 8e02e06584f51ab42986fd44c73d976e, type: 3}
   objectHP: 3
-  shotSound: {fileID: 0}
+  shotSound: {fileID: 8300000, guid: 1792989a5a33779428d2dbe9a9430605, type: 3}
   enemyscore: 500
 --- !u!1 &4673465236936357264
 GameObject:
