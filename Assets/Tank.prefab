@@ -656,6 +656,7 @@ MonoBehaviour:
   moveSpeed: 30
   turnSpeed: 75
   jumpSpeed: 1300
+  JumpSound: {fileID: 0}
 --- !u!65 &4220325756705762256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -833,7 +834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shellPrefab: {fileID: 918631440310689126, guid: a9f58e2c02dfa52448e1026c7aee62ee, type: 3}
   shotSpeed: 1000
-  shotSound: {fileID: 8300000, guid: c415cc25d03f0cf47aacfc785077f61d, type: 3}
+  shotSound: {fileID: 8300000, guid: 654f580289221f14db0b447b49a1356b, type: 3}
   shotCount: 15
   shotCountMax: 15
   shellnumLabel: {fileID: 0}

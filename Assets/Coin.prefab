@@ -111,4 +111,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b847a52efada87842b67636d49fb8da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreLabel: {fileID: 0}
+  coinget: {fileID: 8300000, guid: c9921bf1b98d2c1499c280eb432a7623, type: 3}

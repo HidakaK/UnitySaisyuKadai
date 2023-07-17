@@ -62,7 +62,7 @@ public class Boss : MonoBehaviour
    
             else if(BossHP==0)
             {
-               
+                AudioSource.PlayClipAtPoint(shotSound, transform.position);
                 GameObject effect = Instantiate(effect2, transform.position, Quaternion.identity);
                 Destroy(effect, 2.0f);
                 Destroy(this.gameObject);//ìñÇΩÇ¡ÇΩÇ‡ÇÃÇè¡Ç∑

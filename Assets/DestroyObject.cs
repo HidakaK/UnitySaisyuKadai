@@ -27,9 +27,10 @@ public class DestroyObject : MonoBehaviour
             objectHP -= 1;
             if (objectHP > 0)
             {
+                AudioSource.PlayClipAtPoint(shotSound, transform.position);
                 Destroy(other.gameObject);//ãÖÇè¡Ç∑
                 GameObject effect = Instantiate(effectPrefab, transform.position, Quaternion.identity);
-                AudioSource.PlayClipAtPoint(shotSound, transform.position);
+                
             }
             else
             {
@@ -39,12 +40,16 @@ public class DestroyObject : MonoBehaviour
                 GameObject effect = Instantiate(effectPrefab2, transform.position, Quaternion.identity);
                 Destroy(effect, 2.0f);
                 
-                CountEnemy.suvenemysum --;
+               // CountEnemy.suvenemysum --;
                 
             }
-
             
-            
+        }
+        if (other.gameObject.tag == "Player")
+        {
+            AudioSource.PlayClipAtPoint(shotSound, transform.position);
+            Destroy(this.gameObject);//ìñÇΩÇ¡ÇΩÇ‡ÇÃÇè¡Ç∑
+            GameObject effect = Instantiate(effectPrefab, transform.position, Quaternion.identity);
         }
     }
 }
