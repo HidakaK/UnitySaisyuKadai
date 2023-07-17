@@ -684,8 +684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 100000, guid: dc533b4ca16d3cd4d94b4d9e8b3376f0, type: 3}
   effectPrefab2: {fileID: 1088249624829290, guid: a5986c220614bc143866ceb522e86b82, type: 3}
-  tankHP: 20
-  tankHPMax: 20
+  tankHP: 25
+  tankHPMax: 25
   Hitsound: {fileID: 8300000, guid: 33cd429e81395944088573e40e271f18, type: 3}
   tankHPLabel: {fileID: 0}
 --- !u!114 &4220325756705762270

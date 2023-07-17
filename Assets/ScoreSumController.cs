@@ -17,7 +17,7 @@ public class ScoreSumController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreLabel.text = "スコアAll" + scorenum;
+        scoreLabel.text = "スコア:" + scorenum;
     }
     private void OnTriggerEnter(Collider other)
     {
